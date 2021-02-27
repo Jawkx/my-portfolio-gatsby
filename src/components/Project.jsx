@@ -3,7 +3,9 @@ import React from "react";
 import {
   SiFigma,
   SiFirebase,
+  SiGatsby,
   SiGithub,
+  SiNetlify,
   SiPython,
   SiReact,
   SiTensorflow,
@@ -15,6 +17,8 @@ const techIcon = {
   tensorflow: <SiTensorflow />,
   figma: <SiFigma />,
   python: <SiPython />,
+  netlify: <SiNetlify />,
+  gatsby: <SiGatsby />,
 };
 
 const Project = ({ Project }) => {

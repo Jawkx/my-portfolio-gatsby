@@ -58,6 +58,7 @@ highlight {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 30vh;
 }
 
 .title {
@@ -133,7 +134,8 @@ highlight {
   margin-bottom: 2em;
   border-radius: 15px;
   width: 35%;
-  min-height: 35vh;
+  min-height: 20vh;
+  max-height: 15em;
   @media screen and (max-width: 600px) {
     width: 100%;
     min-height: 25vh;
@@ -166,7 +168,7 @@ highlight {
 
   .project-description {
     font-size: 1.3em;
-
+    margin-bottom: 1em;
     @media screen and (max-width: 600px) {
       font-size: 0.9em;
     }

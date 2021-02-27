@@ -78,9 +78,18 @@ export const projectsData = [
     status: "Working On",
     isWorkingOn: true,
     description:
-      " A web apps to play the popular board game Avalon, on browser",
+      " A web apps to play the popular board game Avalon, on browser. Created Using React, backend using Cloud firestore, and cloud function on firebase",
     techUsed: ["react", "firebase", "figma"],
     link: "https://github.com/Jawkx/open-avalon",
+  },
+  {
+    title: "My Portfolio",
+    status: "Working On",
+    isWorkingOn: true,
+    description:
+      " A portfolio website to showcase and document my projects. Created using Gatsby and React, hosted on Netlify",
+    techUsed: ["react", "netlify", "figma", "gatsby"],
+    link: "https://github.com/Jawkx/my-portfolio-gatsby",
   },
   {
     title: "Ngao Calculator",

@@ -4,6 +4,7 @@ import Project from "../components/Project";
 import Contact from "../components/Contacts";
 import { TechNToolsData, projectsData, contactsData } from "../data.js";
 import myPic from "../images/myPic.jpg";
+import { Helmet } from "react-helmet";
 
 import "./index.scss";
 import { SiGatsby } from "react-icons/si";
@@ -31,13 +32,26 @@ const IndexPage = () => {
   ));
   return (
     <main>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> My portfolio </title>
+      </Helmet>
       <title>Home Page</title>
       <header>
         <img alt="my face" src={myPic} />
         <h1>
           Hi, I'm <highlight>Jaw</highlight>, Welcome to my portfolio
         </h1>
-        <span> Click here to view my resume </span>
+        <span
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/1RwBGqfLrAbghrLVNPnaQUxdrkVQbkRAe/view"
+            )
+          }
+        >
+          {" "}
+          Click here to view my resume{" "}
+        </span>
       </header>
       <content>
         <div className="section">

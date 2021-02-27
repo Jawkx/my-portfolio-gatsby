@@ -16,9 +16,11 @@
   },
   "dependencies": {
     "gatsby": "^2.32.8",
+    "gatsby-plugin-react-helmet": "^3.10.0",
     "gatsby-plugin-sass": "^3.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "reactjs-popup": "^2.0.4",
     "sass": "^1.32.8"
