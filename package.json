@@ -19,6 +19,8 @@
     "gatsby-plugin-sass": "^3.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-icons": "^4.2.0",
+    "reactjs-popup": "^2.0.4",
     "sass": "^1.32.8"
   }
 }

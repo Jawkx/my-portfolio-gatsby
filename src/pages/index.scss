@@ -1,0 +1,244 @@
+@import "./reset.scss";
+
+$dark: #424b54;
+$light: #f5f5f5;
+$yellow: #e1ce7a;
+
+$breakpoints: (
+  phone: 640px,
+  desktop: 1024px,
+) !default;
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $dark;
+  color: $light;
+  font-size: 3em;
+  font-family: "Roboto Condensed", sans-serif;
+  img {
+    width: 250px;
+    border-radius: 50%;
+    margin: 0.5em;
+  }
+
+  @media screen and (max-width: 600px) {
+    text-align: center;
+  }
+
+  span {
+    font-size: 0.4em;
+    padding: 0.5em;
+    margin: 2.3em;
+    background-color: $yellow;
+    border-radius: 10px;
+    color: $dark;
+  }
+  span:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
+
+highlight {
+  font-weight: 700;
+  color: $yellow;
+}
+
+.section {
+  margin-top: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: 500;
+  color: $dark;
+
+  @media screen and (max-width: 600px) {
+    text-align: left;
+    padding-left: 0.5em;
+    font-size: 2em;
+  }
+}
+
+.container {
+  margin-top: 2.5em;
+  display: flex;
+  max-width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tech-n-tools {
+  margin: 1.3em;
+  @media screen and (max-width: 600px) {
+    display: flex;
+  }
+  i {
+    font-size: 7em;
+
+    @media screen and (max-width: 600px) {
+      font-size: 2em;
+      margin-right: 1em;
+    }
+  }
+
+  p {
+    font-size: 2em;
+  }
+}
+
+.tech-n-tools:hover {
+  animation-name: enlarge;
+  animation-duration: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+// .tech-popup {
+//   width: 10em;
+//   padding: 1em;
+//   background-color: $yellow;
+// }
+
+.popup-content {
+  margin: auto;
+  background: $yellow;
+  width: 10em;
+  min-height: 3em;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.popup-arrow {
+  color: $yellow;
+}
+
+.project-card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.3em;
+  margin-bottom: 2em;
+  border-radius: 15px;
+  width: 35%;
+  min-height: 35vh;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    min-height: 25vh;
+  }
+
+  .project-title {
+    font-size: 1.4em;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.3em;
+    }
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    p {
+      margin-right: 0.5em;
+    }
+    color: $dark;
+    border-bottom: solid 1px $dark;
+    margin-bottom: 0.3em;
+    padding-bottom: 0.3em;
+  }
+  .project-status {
+    font-size: 1.3em;
+    @media screen and (max-width: 600px) {
+      font-size: 1em;
+    }
+    margin-bottom: 1em;
+  }
+
+  .project-description {
+    font-size: 1.3em;
+
+    @media screen and (max-width: 600px) {
+      font-size: 0.9em;
+    }
+  }
+  .footer {
+    align-self: center;
+    font-size: 1.3em;
+    @media screen and (max-width: 600px) {
+      font-size: 1.2em;
+    }
+  }
+}
+
+.project-card:hover {
+  animation-name: opacity;
+  animation-duration: 0.1s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+  font-size: 1.5em;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.2em;
+  }
+  .link {
+    margin-left: 1.2em;
+  }
+
+  .link:hover {
+    cursor: pointer;
+  }
+}
+
+footer {
+  min-height: 15vh;
+  @media screen and (max-width: 600px) {
+    min-height: 13vh;
+  }
+  background-color: $dark;
+  text-align: center;
+  padding-top: 1em;
+  margin-top: 3em;
+
+  h1 {
+    font-size: 1.3em;
+    color: $yellow;
+
+    @media screen and (max-width: 600px) {
+      font-size: 0.9em;
+    }
+  }
+}
